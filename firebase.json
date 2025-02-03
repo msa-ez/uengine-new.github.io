@@ -1,0 +1,11 @@
+{
+    "hosting": [
+      {
+        "site": "uengine",
+        "public": ".",
+        "ignore": [
+          "firebase.json"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        
+        <title>uEngine &mdash; The AI-first Company</title>
+        <meta name="description" content="Process GPT는 생성 AI(LLM)의 기능을 활용하여 비즈니스 프로세스를 자연어로 정의하고 실행 가능한 모델로 변환합니다. 이를 통해 전통적인 BPM 작업을 단순화하고 비용과 노력을 줄일 수 있으며, LangChain과 Chat-GPT 모델을 통합하여 실행과 정의를 원활하게 합니다. 고급 데이터베이스와 다중 에이전트 시스템을 활용하여 유연하고 효율적인 프로세스 자동화를 제공하며, 비즈니스의 접근성과 효율성을 높이는 것을 목표로 합니다.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Favicon -->
+        <link rel="icon" href="../images/favicon.png" type="image/png" sizes="any">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css?after">
+        <link rel="stylesheet" href="../css/style-responsive.css">
+        <link rel="stylesheet" href="../css/vertical-rhythm.min.css">
+        <link rel="stylesheet" href="../css/magnific-popup.css">
+        <link rel="stylesheet" href="../css/owl.carousel.css">
+        <link rel="stylesheet" href="../css/splitting.css">
+        <link rel="stylesheet" href="../css/YTPlayer.css">
+        <link rel="stylesheet" href="../css/demo-main/demo-main.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    </head>
+    
+    <body class="appear-animate">
+        
+        <!-- Page Loader -->        
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <!-- End Page Loader -->
+
+        <!-- Skip to Content -->
+        <a href="#main" class="btn skip-to-content">Skip to Content</a>
+        <!-- End Skip to Content -->
+        
+        <!-- Page Wrap -->
+        <div class="page" id="top">
+            
+            <!-- Navigation Panel -->
+            <nav class="main-nav transparent stick-fixed wow-menubar">
+                <div class="main-nav-sub full-wrapper">
+                    
+                    <div class="nav-logo-wrap local-scroll">
+                        <a href="../index.html" class="logo">
+                            <img src="../images/logo-b.png" alt="uEngine Logo" width="105" height="34" class="logo-dark" />
+                        </a>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <div class="mobile-nav" role="button" tabindex="0">
+                        <!-- 모바일 문의하기 -->
+                        <a href="https://uenginehq.slack.com/join/shared_invite/zt-2qh7j779f-UWwa~p~OvAla7s8pjikWRw#/shared-invite/email" target="_blank" class="opacity-1 no-hover mobile-chat"><span class="link-hover-anim underline" data-link-animate="y">문의하기</span></a>
+
+                        <i class="mobile-nav-icon"></i>
+                        <span class="visually-hidden">Menu</span>
+                    </div>
+                    
+                    <!-- Main Menu -->
+                    <div class="inner-nav desktop-nav">
+                        <ul class="clearlist local-scroll">
+                            
+                            <!-- Item With Sub -->
+                            <li>
+                                <a href="#" class="mn-has-sub active">AI For Cloud Native <i class="mi-chevron-down"></i></a>
+                                
+                                <!-- Sub Megamenu -->
+                                <ul class="mn-sub mn-has-multi">
+                                    
+                                    <!-- Sub Column -->
+                                    <li class="mn-sub-multi">
+                                        <span class="mn-group-title">&lt;Products&gt;</span>
+                                        <ul>
+                                            <li>
+                                                <a href="https://labs.msaez.io/" target="_blank" style="font-size: 18px;">MSA Easy (SaaS)</a>
+                                            </li>
+                                            <li>
+                                                <a href="dxez.html" style="font-size: 18px;">DX Easy (On-Prem)</a>
+                                            </li>
+                                            <li>
+                                                <a href="legacyModernizer.html" style="font-size: 18px;">Legacy Modernizer</a>
+                                            </li>
+                                        </ul>
+
+                                        <span class="mn-group-title" style="margin-top: 20px;">&lt;Services&gt;</span>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.msaschool.io/operation/introduction/" target="_blank" style="font-size: 18px;">Education - MSA</a>
+                                            </li>
+                                            <!-- <li>
+                                                <a href="https://www.llmschool.ai/operation/introduction/" target="_blank" style="font-size: 18px;">Education - LLM</a>
+                                            </li> -->
+                                            <li>
+                                                <a href="consultingMSA.html" style="font-size: 18px;">Consulting</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul style="margin-top: 30px;">
+                                            <li>
+                                                <a href="caseStudiesMSA.html" style="font-size: 18px;">Case Studies</a>
+                                            </li>
+                                        </ul>                                    
+                                    </li>
+                                    <!-- End Sub Column -->                                    
+                                </ul>
+                                <!-- End Sub Megamenu -->
+                                
+                            </li>
+                            <!-- End Item With Sub -->
+
+                            <!-- Item With Sub -->
+                            <li>
+                                <a href="#" class="mn-has-sub active">AI For Business Process <i class="mi-chevron-down"></i></a>
+                                
+                                <!-- Sub Megamenu -->
+                                <ul class="mn-sub mn-has-multi">
+                                    
+                                    <!-- Sub Column -->
+                                    <li class="mn-sub-multi">
+                                        <span class="mn-group-title">&lt;Products&gt;</span>
+                                        <ul>
+                                            <li>
+                                                <a href="uengine6bpm.html" style="font-size: 18px;">uEngine6 BPM</a>
+                                            </li>
+                                            <li>
+                                                <a href="processGPT.html" style="font-size: 18px;">Process GPT</a>
+                                            </li>
+                                        </ul>
+
+                                        <span class="mn-group-title" style="margin-top: 20px;">&lt;Services&gt;</span>
+                                        <ul>
+                                            <li>
+                                                <a href="educationBPM.html" style="font-size: 18px;">Education</a>
+                                            </li>
+                                            <li>
+                                                <a href="consultingBPM.html" style="font-size: 18px">Consulting</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul style="margin-top: 30px;">
+                                            <li>
+                                                <a href="caseStudiesBPM.html" style="font-size: 18px;">Case Studies</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- End Sub Column -->                                    
+                                </ul>
+                                <!-- End Sub Megamenu -->
+                                
+                            </li>
+                            <!-- End Item With Sub -->
+                            
+                            <!-- Item With Sub -->
+                            <li>
+                                <a href="#" class="mn-has-sub active">About <i class="mi-chevron-down"></i></a>
+                                
+                                <!-- Sub Megamenu -->
+                                <ul class="mn-sub mn-has-multi">
+                                    
+                                    <!-- Sub Column -->
+                                    <li class="mn-sub-multi">
+                                        <!-- <span class="mn-group-title">&lt;Company&gt;</span> -->
+                                        <ul>
+                                            <li>
+                                                <a href="history.html" style="font-size: 18px;">History</a>
+                                            </li>
+                                            <li>
+                                                <a href="newsroom.html" style="font-size: 18px;">Newsroom</a>
+                                            </li>
+                                            <li>
+                                                <a href="newsWebinars.html" style="font-size: 18px;">Webinars</a>
+                                            </li>
+                                            <li>
+                                                <a href="interview.html" style="font-size: 18px;">Interview</a>
+                                            </li>
+                                            <li>
+                                                <a href="partners.html" style="font-size: 18px;">Partners</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <!-- End Sub Column -->                                    
+                                </ul>
+                                <!-- End Sub Megamenu -->
+                                
+                            </li>
+                            <!-- End Item With Sub --> 
+                        </ul>
+                        
+                        <ul class="items-end clearlist">
+                                        
+                            <li><a href="https://uenginehq.slack.com/join/shared_invite/zt-2qh7j779f-UWwa~p~OvAla7s8pjikWRw#/shared-invite/email" target="_blank" class="opacity-1 no-hover"><span class="link-hover-anim underline" data-link-animate="y">문의하기</span></a></li>
+                            <li><a href="blogList.html" class="opacity-1 no-hover"><span class="link-hover-anim underline" data-link-animate="y">Blogs</span></a></li>
+ 
+                            <!-- Languages -->
+                            <!-- <li>
+                                <a href="#" class="mn-has-sub opacity-1">Kr <i class="mi-chevron-down"></i></a>
+                                <ul class="mn-sub to-left">                                    
+                                    <li><a href="../enContents/processGPT.html">English</a></li>
+                                    <li><a href="processGPT.html">Korean</a></li>
+                                </ul>
+                                
+                            </li> -->
+                            <!-- End Languages -->                              
+                        </ul>                        
+                        
+                    </div>
+                    <!-- End Main Menu -->
+                    
+                </div>
+            </nav>
+            <!-- End Navigation Panel -->
+            
+            <main id="main">
+            
+                <!-- Header Section -->
+                <section class="page-section pb-100 pb-sm-60 bg-gray-light-1 bg-light-alpha-90 bg-scroll" style="background-image: url(../images/full-width-images/section-bg-2.jpg)">
+                    <!-- <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-white"></div> -->
+                    <div class="container position-relative pt-50">
+                            
+                        <!-- Section Content -->
+                        <div class="text-center">
+                            <div class="row">
+                                
+                                <!-- Page Title -->
+                                <div class="col-md-8 offset-md-2">
+                                    
+                                    <h2 class="section-caption-border mb-30 mb-xs-20 wow fadeInUp" data-wow-duration="1.2s">
+                                        Our Products
+                                    </h2>
+                                        
+                                    <h1 class="hs-title-1 mb-0">
+                                        <span class="wow charsAnimIn" data-splitting="chars">Process GPT</span>
+                                    </h1>
+                               
+                               </div>
+                               <!-- End Page Title -->
+                                
+                            </div>                            
+                        </div>
+                        <!-- End Section Content -->
+                        
+                    </div>
+                </section>
+                <!-- End Header Section -->
+                
+                
+                <!-- About Section -->
+                <section class="page-section">                    
+                    <div class="container">
+                        
+                        <div class="row">
+                            
+                            <div class="col-sm-5 mb-xs-50 mt-n10">
+                                <div class="call-action-4-images">
+                                    <iframe class="pc-show" src="https://www.youtube.com/embed/U_21lPKoGOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" style="width: 100%; height: 315px;"></iframe>
+                                    <iframe class="mo-show" src="https://www.youtube.com/embed/U_21lPKoGOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" style="width: 100%; height: 240px;"></iframe>
+                                    <!-- <img src="../images/demo-corporate/processGptLogo-robot.svg" alt="processGpt Logo" width="105" height="34" class="logo-dark" /> -->
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-7 col-xl-6 offset-xl-1 mt-n10 mt-sm-n100">
+                                
+                                <div class="wow linesAnimIn" data-splitting="lines">
+                                    <p class="lead mt-0 mb-40" style="font-size: 20px;">
+                                        Process GPT는 생성 AI(LLM)의 기능을 활용하여 비즈니스 프로세스를 자연어로 정의하고 실행 가능한 모델로 변환합니다. 
+                                        이를 통해 전통적인 BPM 작업을 단순화하고 비용과 노력을 줄일 수 있으며, LangChain과 Chat-GPT 모델을 통합하여 실행과 정의를 원활하게 합니다. 
+                                        고급 데이터베이스와 다중 에이전트 시스템을 활용하여 유연하고 효율적인 프로세스 자동화를 제공하며, 
+                                        비즈니스의 접근성과 효율성을 높이는 것을 목표로 합니다.
+                                    </p>
+                                    <!-- <p class="lead mt-0 mb-40" style="font-size: 20px;">
+                                        Process GPT는 자연어 정의를 실행 가능한 모델로 변환하여 비즈니스 프로세스 자동화를 혁신합니다. 
+                                        LangChain 및 Chat-GPT와 같은 BPM 시스템 및 기술과의 통합은 프로세스 관리를 단순화하고 비용을 크게 절감하며 비즈니스 효율성을 향상시킵니다.
+                                    </p> -->
+                                    <!-- <p class="lead mt-0 mb-10" style="font-size: 22px; font-weight: 600;">
+                                        기능 및 시나리오:
+                                    </p> -->
+                                    <!-- <p class="mb-40" style="color: #333; font-size: 18px;">
+                                        Process GPT는 비즈니스 프로세스 자동화에 대한 혁신적인 접근 방식으로, 
+                                        생성 AI(LLM)의 기능을 활용하여 비즈니스 프로세스의 정의와 실행 단계를 모두 향상합니다.
+                                        사용자가 자연어로 프로세스를 정의한 후 자동으로 실행 가능한 모델로 변환할 수 있도록 함으로써 
+                                        전통적으로 비용이 많이 들고 복잡한 비즈니스 프로세스 관리(BPM) 작업을 단순화합니다. 
+                                        이 시스템은 각각 실행 및 정의 단계에서 LangChain 및 Chat-GPT 모델과 같은 기존 BPM 시스템 및 기술과 원활하게 통합됩니다. 
+                                        또한 유연하고 효율적인 프로세스 자동화를 위해 고급 데이터베이스와 다중 에이전트 시스템을 활용합니다. 
+                                        Process GPT는 수동 BPM 및 프로세스 자동화와 관련된 비용과 노력을 크게 줄여 비즈니스의 접근성과 효율성을 높이는 것을 목표로 합니다.
+                                    </p> -->
+                                </div>
+                                
+                                <div class="local-scroll wow fadeInUp" data-wow-offset="0">
+                                    <a href="https://forms.gle/f8AmiCa3wvRztUHu7" class="btn btn-mod btn-large btn-round btn-hover-anim" target="_blank">
+                                        <span style="font-size: 16px;">Waitlist에 등록하기</span>
+                                    </a>
+                                    <a target="_blank" href="../images/Business-Process-Innovation-Using-Enterprise-LLM-final-compact-ver-1.pdf" class="btn btn-mod btn-w btn-large btn-round btn-hover-anim mt-sm-10" style="border: 2px solid #111;">
+                                        <span style="font-size: 16px;">브로슈어 다운로드</span>
+                                    </a>                                   
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                </section>
+                <!-- End About Section -->  
+                
+                
+                <!-- Testimonials Section -->
+                <section class="page-section bg-gradient-gray-light-2 bg-scroll">
+                    <div class="container position-relative">
+                        
+                        <a id="features01" name="features01"></a>
+
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
+                                <!-- <h2 class="section-caption mb-xs-10 wow fadeInUp">Clients Stories</h2> -->
+                                <h3 class="section-title mb-80 mb-sm-60"><span class="wow charsAnimIn" data-splitting="chars">FEATURES</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 프로세스 정의 -->
+                        <div class="row mb-100 mb-sm-80">
+                            
+                            <div class="col-md-5 col-lg-6 offset-lg-1 mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-01.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 offset-md-1 col-lg-4 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        대화로 프로세스 정의
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ생성형 AI를 통한 프로세스 정의 생성<br>
+                                            ㆍ생성과 함께 가시화<br>
+                                            ㆍ생성 후에 관리자가 세부 수정<br>
+                                            ㆍ세부 수정사항도 자연어로 기술할 수 있으며 BPMN 프로세스 모델러가 익숙한 사람은 직접 수정
+                                        </div>
+                                        <!-- <div class="testimonials-6-position text-gray">
+                                            Marketing Consultant
+                                        </div> -->
+                                    </footer>
+                                    
+                                    <a id="features02" name="features02"></a>
+                                    
+                                </blockquote>
+                            </div>                            
+                            
+                        </div>
+                        <!-- End Testimonial -->
+
+                        <!-- Testimonial UI 생성 -->
+                        <div class="row mb-100 mb-sm-80">  
+                            
+                            <div class="col-md-5 offset-md-1 col-lg-6 offset-lg-1 order-md-last mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-09.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>                           
+                            
+                            <div class="col-md-6 col-lg-4 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        대화로 UI 생성
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ기존 UI 개발은 우수한 프론트엔드 기술자를 요구
+                                            <br>
+                                            ㆍAI를 기반하면 최신 프레임워크 기반의 멀티스크린에 최적화된 업무 화면을 즉시 생성할 수 있고 생성된 화면을 원하는 대로 수정할 수 있음
+                                        </div>
+                                    </footer>
+
+                                    <a id="features03" name="features03"></a>
+
+                                </blockquote>
+                            </div>       
+                            
+                        </div>
+                        <!-- End Testimonial -->    
+
+                        <!-- Testimonial 시스템 연동 -->
+                        <div class="row mb-100 mb-sm-80">                            
+                            
+                            <div class="col-md-5 col-lg-6 offset-lg-1 mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-07.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 offset-md-1 col-lg-4 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        대화로 시스템 연동
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ기존 정보시스템 간 연동은 다양한 기술적/정치적 이유로 시간과 노력이 많이 소요
+                                            <br>
+                                            ㆍAI를 기반하면 내부 시스템들의 Open API Spec 을 해석하여 프로세스 데이터 값들과 어떻게 연동하면 될지를 자동으로 생성
+                                            <br>
+                                        </div>
+                                    </footer>
+                        
+                                    <a id="features04" name="features04"></a>
+                                    
+                                </blockquote>
+                            </div>                            
+                            
+                        </div>
+                        <!-- End Testimonial -->
+                        
+                        <!-- Testimonial 프로세스 실행 -->
+                        <div class="row mb-100 mb-sm-80">                            
+                                                    
+                            <div class="col-md-5 offset-md-1 col-lg-6 offset-lg-1 order-md-last mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-03.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 offset-md-1 col-lg-4 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        대화형 프로세스 실행
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ업무 단계별 담당자에게 업무 지시 및 독려<br>
+                                            ㆍ업무 체크포인트 준수 여부 확인 후 자동 반려<br>
+                                            ㆍ프로세스 진행 모니터링<br>
+                                            ㆍ이메일 발송 등 시스템 액티비티 수행
+                                        </div>
+                                    </footer>
+
+                                    <a id="features05" name="features05"></a>
+                                    
+                                </blockquote>
+                            </div>                            
+                            
+                        </div>
+                        <!-- End Testimonial -->
+
+                        <!-- Testimonial 초안 생성 -->
+                        <div class="row mb-100 mb-sm-80">  
+                        
+                            <div class="col-md-5 col-lg-6 offset-lg-1 mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-06.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>                           
+                            
+                            <div class="col-md-6 col-lg-4 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        에이전트가 초안 생성
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ멀티에이젼트를 통한 프로세스 자동화
+                                        </div>
+                                    </footer>
+                                    
+                                    <a id="features06" name="features06"></a>
+                                    
+                                </blockquote>
+                            </div>       
+                            
+                        </div>
+                        <!-- End Testimonial -->  
+                        
+                        <!-- Testimonial 음성 인식 -->
+                        <div class="row mb-100 mb-sm-80">  
+                        
+                            <div class="col-md-5 offset-md-1 col-lg-6 offset-lg-1 order-md-last mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-08.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>                           
+                            
+                            <div class="col-md-6 col-lg-4 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        AI 음성 인식
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ영업/임원직 등 잦은 이동이 불가피할 경우 운전중에도 음성 인식 기반 대화로 업무 처리 가능
+                                        </div>
+                                    </footer>
+                                    
+                                    <a id="features06" name="features06"></a>
+                                    
+                                </blockquote>
+                            </div>       
+                            
+                        </div>
+                        <!-- End Testimonial --> 
+
+
+                        <!-- Testimonial 조직도 정의 -->
+                        <!-- <div class="row mb-100 mb-sm-80">  
+                        
+                            <div class="col-md-5 offset-md-1 col-lg-5 offset-lg-1 order-md-last mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-02.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>                           
+                            
+                            <div class="col-md-6 col-lg-5 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        대화로 조직도 정의
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ조직 구성 정의를 자연어와 편집기 두가지 방식으로 정의<br>
+                                            ㆍ역할과 팀 소속에 따른 담당자 찾기 규칙을 자연어로 정의함<br>
+                                            ㆍ이후 프로세스 실행 시 업무 담당자를 자동으로 매핑하는데 활용됨<br>
+                                        </div>
+                                    </footer>
+
+                                    <a id="features07" name="features07"></a>
+
+                                </blockquote>
+                            </div>       
+                            
+                        </div> -->
+                        <!-- End Testimonial -->    
+
+                        <!-- Testimonial 맥락인식 -->
+                        <!-- <div class="row">                            
+                            
+                            <div class="col-md-5 col-lg-5 offset-lg-1 mb-sm-40">
+                                <div class="overflow-hidden" style="border:7px solid #eee; border-radius: 5px;">
+                                    <img src="../images/demo-corporate/processGPT-05.gif" alt="Image Description" class="wow scaleOutIn" />
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 offset-md-1 col-lg-5 offset-lg-1 d-flex align-items-center wow fadeInUp">
+                                <blockquote class="testimonials-6-item">
+                                                                                    
+                                    <div class="testimonials-6-icon black opacity-005" aria-hidden="true">“</div>
+                                    
+                                    <p class="testimonials-6-text mb-40">
+                                        맥락 인식 지원
+                                    </p>
+                                    
+                                    <div class="section-line mb-10"></div>
+                                    
+                                    <footer>
+                                        <div class="testimonials-6-author">
+                                            ㆍ업무 대화 중 개입하여 정보 검색, 태스크 등록 등 지원
+                                        </div>
+                                    </footer>
+                                    
+                                </blockquote>
+                            </div>                            
+                        </div> -->
+                        <!-- End Testimonial -->
+                            
+                    </div>
+                </section>
+                <!-- End Testimonials Section -->
+                    
+                <!-- Divider -->
+                <hr class="mt-0 mb-0"/>
+                <!-- End Divider -->   
+
+                <!-- Text Section -->
+                <section class="page-section">
+                    <div class="container position-relative">
+
+                        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
+                            <!-- <h2 class="section-caption mb-xs-10 wow fadeInUp">Clients Stories</h2> -->
+                            <h3 class="section-title mb-70 mb-sm-50" style="text-transform: uppercase;"><span class="wow charsAnimIn" data-splitting="chars">Utilized technology</span></h3>
+                        </div>
+
+                        <div class="mb-30 mb-sm-40 col-lg-8 offset-lg-2">
+                            <p class="testimonials-6-author" style="font-weight: 300;">
+                                ㆍ<span style="font-weight: 600;">LLM Framework:</span> LangChain, LangObject (github.com/uengine-oss/langobject)<br>
+                                ㆍ<span style="font-weight: 600;">Model:</span> Chat-GPT4 (for Process Execution), Chat-GPT3.5 (for definition Generation, Agent Execution)<br>
+                                ㆍ<span style="font-weight: 600;">RAG:</span> LlamaIndex<br>
+                                ㆍ<span style="font-weight: 600;">Multi-agent:</span> Crew AI + LangGraph<br>
+                                ㆍ<span style="font-weight: 600;">Database:</span> Supabase (Postgres) + Neo4J Graph DB
+                            </p>
+                        </div>
+                                                
+                        <div class="col-lg-8 offset-lg-2">
+                            <p class="mb-20" style="font-size: 20px; font-weight: 600; color: #5a67d8; padding-left: 5px;">
+                                + uengine6 BPMS<br>
+                                + MSA Easy (github.com/msa-ez/platform)
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Text Section -->          
+           </main>
+            
+            <!-- Footer -->
+            <footer class="page-section footer bg-gray-light-1 pb-30">
+                <div class="container">
+                    
+                    <div class="row pb-120 pb-sm-80 pb-xs-50">
+                                                
+                        <div class="col-md-4 col-lg-4 text-gray mb-sm-50" style="font-size: 14px;">
+                            
+                            <div class="mb-30">
+                                <img src="../images/logo-b.png" width="105" height="34" alt="uEngine Logo" />
+                            </div>
+                            
+                            <p>
+                                유엔진솔루션즈는 2003년 이래 업무 프로세스 관리 (Business Process Management), AI, MSA, 기업용 SNS, PaaS 를 포함한 클라우드 플랫폼, 도메인 기반 개발 방법을 지향하는 개발 프레임워크 등을 개발하고 오픈소스 프로젝트로 제공하는 기술 집약적 기업입니다.
+                            </p>
+                            
+                            <div>                                
+                                본사: 서울특별시 서초구 신반포로45길 18 5층 502호<br>
+                                지사: 경상남도 창원시 성산구 상남로37
+                            </div>
+                            
+                            <div class="clearlinks">                                
+                                <strong>T.</strong> <a href="tel:02-567-8301">02.567.8301</a>
+                            </div>
+                            
+                            <div class="clearlinks">
+                                <strong>E.</strong> <a href="mailto:help@uengine.org">help@uengine.org</a>
+                            </div>
+
+                            <div class="clearlinks" style="margin-top: 5px;">                                
+                                <a href="https://www.facebook.com/groups/cloudswmoding" rel="noopener nofollow" target="_blank">
+                                    <i class="fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </div>
+                            
+                            <div class="clearlinks">
+                                <a href="https://www.youtube.com/channel/UCWXNEfACspVtCa-hyYBC76g" rel="noopener nofollow" target="_blank">
+                                    <i class="fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-7 offset-md-1 offset-lg-1">                            
+                            <div class="row mt-n30">
+                                
+                                <!-- Footer Widget -->
+                                <div class="col-sm-4 mt-30">
+                                    
+                                    <h3 class="fw-title">AI For Cloud Native</h3>
+                                    
+                                    <ul class="fw-menu clearlist">                                        
+                                        <li><a href="https://labs.msaez.io/" target="_blank">MSA Easy (SaaS)</a></li>
+                                        <li><a href="dxez.html">DX Easy (On-Prem)</a></li>
+                                        <li><a href="legacyModernizer.html">Legacy Modernizer</a></li>
+                                        <li><a href="https://www.msaschool.io/operation/introduction/" target="_blank">Education - MSA</a></li>
+                                        <!-- <li><a href="https://www.llmschool.ai/operation/introduction/" target="_blank">Education - LLM</a></li> -->
+                                        <li><a href="consultingMSA.html">Consulting</a></li>
+                                        <li><a href="caseStudiesMSA.html">Case Studies</a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- End Footer Widget -->
+                                
+                                <!-- Footer Widget -->
+                                <div class="col-sm-4 mt-30">
+                                    
+                                    <h3 class="fw-title">AI For Business Process</h3>
+                                    
+                                    <ul class="fw-menu clearlist">                                        
+                                        <li><a href="uengine6bpm.html">uEngine6 BPM</a></li>
+                                        <li><a href="processGPT.html">Process GPT</a></li>
+                                        <li><a href="educationBPM.html">Education</a></li>
+                                        <li><a href="consultingBPM.html">Consulting</a></li>
+                                        <li><a href="caseStudiesBPM.html">Case Studies</a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- End Footer Widget -->
+                                
+                                <!-- Footer Widget -->
+                                <div class="col-sm-4 mt-30">
+                                    
+                                    <h3 class="fw-title">About</h3>
+                                    
+                                    <ul class="fw-menu clearlist">                                        
+                                        <li><a href="history.html">History</a></li>
+                                        <li><a href="newsroom.html">Newsroom</a></li>
+                                        <li><a href="newsWebinars.html">Webinars</a></li>
+                                        <li><a href="interview.html">Interview</a></li>
+                                        <li><a href="partners.html">Partners</a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- End Footer Widget -->
+                            </div>                            
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Footer Text -->
+                    <div class="row text-gray">
+                        
+                        <div class="col-md-4 col-lg-3">
+                            <!-- <b>© uEngine 2024.</b> -->
+                        </div>
+                        
+                        <div class="col-md-7 offset-md-1 offset-lg-2 clearfix">
+                            
+                            <b>© uEngine 2024. All Rights Reserved.</b>
+                            
+                            <!-- Back to Top Link -->
+                            <div class="local-scroll float-end mt-n20 mt-sm-10">
+                                <a href="#top" class="link-to-top">                                
+                                    <i class="mi-arrow-up size-24"></i>
+                                    <span class="visually-hidden">Scroll to top</span>
+                                </a>
+                            </div>
+                            <!-- End Back to Top Link -->
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- End Footer Text --> 
+                    
+                 </div>                 
+            </footer>
+            <!-- End Footer -->
+        
+        </div>
+        <!-- End Page Wrap -->      
+        
+        <!-- JS -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/jquery.ajaxchimp.min.js"></script>             
+        <script src="../js/contact-form.js"></script>        
+        <script src="../js/all.js"></script> 
+        <!-- End JS -->       
+        
+    </body>
+</html>
