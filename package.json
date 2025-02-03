@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d ."
   },
   "dependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   },
   "devDependencies": {
     "lite-server": "^2.6.1"
